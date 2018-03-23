@@ -1,4 +1,23 @@
+//
+//	Browserslist demo styles
+//	--------------------------------------------
+
 @import "reset";
+
+// Local vars
+$styles-red: #C33764;
+$styles-blue: #1D2671;
+
+// Animations
+@keyframes fadeIn {
+	from {
+		border-top-color: rgba($styles-red, 0%);
+	}
+
+	to {
+		border-top-color: rgba($styles-red, 100%);
+	}
+}
 
 .container {
 	max-width: 600px;
@@ -6,18 +25,8 @@
 	padding: 0 1rem;
 }
 
-@keyframes fadeIn {
-	from {
-		border-top-color: rgba(#C33764, 0%);
-	}
-
-	to {
-		border-top-color: rgba(#C33764, 100%);
-	}
-}
-
 body {
-	border-top: 5px solid rgba(#C33764, 0%);
+	border-top: 5px solid rgba($styles-red, 0%);
 	animation: fadeIn 250ms ease-in-out 250ms forwards;
 }
 
@@ -25,7 +34,6 @@ h1,
 h2 {
 	font-family: sans-serif;
   display: inline-block;
-  pointer-events: none;
 
   // needs -ms- prefix for IE 10
   touch-action: auto;
@@ -39,7 +47,7 @@ h1 {
 	letter-spacing: -0.04em;
 
 	// gradient (w/ progressive syntax)
-	background: linear-gradient(to right, #1D2671, #C33764);
+	background: linear-gradient(to right, $styles-blue, $styles-red);
 	
 	// webkit features only
 	-webkit-background-clip: text;
@@ -50,14 +58,14 @@ h2 {
 	margin: 0 0 25px;
 	line-height: 1.2;
 	font-size: 1.3rem;
-	color: mix(#1D2671, #fff, 60%);
+	color: mix($styles-blue, #fff, 60%);
 }
 
 p {
 	font-size: 1.2rem;
 	line-height: 1.35;
 	margin: 0 0 20px;
-	color: mix(#1D2671, #555, 60%);
+	color: mix($styles-blue, #555, 60%);
 
 	@media screen and (min-width: 767px) {
 		font-size: 1.3rem;
@@ -65,11 +73,11 @@ p {
 }
 
 a {
-	color: #C33764;
+	color: $styles-red;
 	text-decoration: none;
 
 	&:hover {
-		color: darken(#C33764, 10%);
+		color: darken($styles-red, 10%);
 		text-decoration: underline;
 	}
 }

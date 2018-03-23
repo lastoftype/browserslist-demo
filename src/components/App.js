@@ -6,7 +6,7 @@ class App extends Component {
         return (
             <div className="container">
 							<h1>Styles Test</h1>
-							<h2>A simple test of Browserslist and PostCSS</h2>
+							<h2>A simple test of <a href="https://github.com/ai/browserslist" title="browserslist">browserslist</a> and <a href="https://github.com/postcss/postcss" title="PostCSS">PostCSS</a></h2>
 							<div className="content">
 								<p>Wario circus strongman iron tache pencil mexican el snort, circus strongman el snort sweat irrigator, burt reynolds wario old man in pub mexican iron tache pencil. Crumb catcher pencil Refined gentlemen john cleese luxurious gent, mustachioed des lynam luxurious lady magnets crumb catcher Refined gentlemen middle eastern despot lady magnets john cleese pencil gent?</p>
 								<p>Tudor philosopher felis fox hunting, class definer blue oyster bar fox hunting tudor philosopher mr frothy-top felis knavish rogue ian botham. Ron jeremy villain cardinal richelieu groucho-a-like tom selleck crumb catcher stache, tricky sneezes crumb catcher clive dunn cardinal richelieu villain tom selleck groucho-a-like village people ron jeremy blacksmith success horseshoe stache walrus omar sharif, tricky sneezes groucho-a-like villain stache stache clive dunn crumb catcher success omar sharif tom selleck horseshoe cardinal richelieu villain villain nuremberg rally prince barin old man in pub lorreto del mar village people ron jeremy blacksmith walrus?</p>
