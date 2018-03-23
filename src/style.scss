@@ -1,0 +1,75 @@
+@import "reset";
+
+.container {
+	max-width: 600px;
+	margin: 5vh auto 10vh;
+	padding: 0 1rem;
+}
+
+@keyframes fadeIn {
+	from {
+		border-top-color: rgba(#C33764, 0%);
+	}
+
+	to {
+		border-top-color: rgba(#C33764, 100%);
+	}
+}
+
+body {
+	border-top: 5px solid rgba(#C33764, 0%);
+	animation: fadeIn 250ms ease-in-out 250ms forwards;
+}
+
+h1,
+h2 {
+	font-family: sans-serif;
+  display: inline-block;
+  pointer-events: none;
+
+  // needs -ms- prefix for IE 10
+  touch-action: auto;
+}
+
+h1 {
+	font-size: 3rem;
+	margin: 8px 0 13px;
+	line-height: 1.1;
+	font-weight: bold;
+	letter-spacing: -0.04em;
+
+	// gradient (w/ progressive syntax)
+	background: linear-gradient(to right, #1D2671, #C33764);
+	
+	// webkit features only
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+	margin: 0 0 25px;
+	line-height: 1.2;
+	font-size: 1.3rem;
+	color: mix(#1D2671, #fff, 60%);
+}
+
+p {
+	font-size: 1.2rem;
+	line-height: 1.35;
+	margin: 0 0 20px;
+	color: mix(#1D2671, #555, 60%);
+
+	@media screen and (min-width: 767px) {
+		font-size: 1.3rem;
+	}
+}
+
+a {
+	color: #C33764;
+	text-decoration: none;
+
+	&:hover {
+		color: darken(#C33764, 10%);
+		text-decoration: underline;
+	}
+}
