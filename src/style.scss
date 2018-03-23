@@ -19,6 +19,18 @@ $styles-blue: #1D2671;
 	}
 }
 
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translate(-5px, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0,0);
+	}
+}
+
 .container {
 	max-width: 600px;
 	margin: 5vh auto 10vh;
@@ -69,6 +81,16 @@ p {
 
 	@media screen and (min-width: 767px) {
 		font-size: 1.3rem;
+	}
+
+	opacity: 0;
+	animation: fadeInUp 250ms ease-in-out 500ms forwards;
+
+	// stagger animations
+	@for $i from 1 through 10 {
+		&:nth-child(#{$i}) {
+			animation-delay: (250 + $i * 100) + ms;
+		}
 	}
 }
 
