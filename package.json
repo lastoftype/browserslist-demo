@@ -1,13 +1,16 @@
 {
   "name": "browser-data",
   "version": "1.0.0",
-  "description": "Simple demo of using browserslist in a web project\"",
+  "description": "Simple demo of using browserslist in a web project",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --config ./webpack.config.js --mode production"
+    "build": "webpack --config ./webpack.config.js --mode production",
+    "browsers": "npx browserslist --coverage '> 1% in my stats' --stats=./browserslist-stats.json",
+    "get": "npx browserslist-ga"
   },
+  "author": "Matt Unhjem",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
