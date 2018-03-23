@@ -21,6 +21,7 @@
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1"
   },
+  "repository": "github:lastoftype/browserslist-demo",
   "dependencies": {
     "autoprefixer": "^8.2.0",
     "css-loader": "^0.28.11",
