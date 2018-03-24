@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 
 class App extends Component {
-  state = {
-    demo: false,
-    otherThing: funcVar => {
-      return funcVar;
-    }
-  };
-
   render() {
     return (
       <div className="container">
